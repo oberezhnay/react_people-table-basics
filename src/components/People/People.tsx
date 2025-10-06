@@ -45,14 +45,20 @@ export const People: React.FC<Props> = ({ people }) => {
                 <td>{person.died}</td>
                 <td>
                   {person.motherName ? (
-                    <PersonLink person={people.find(p => p.name === person.motherName)} name={person.motherName} />
+                    <PersonLink
+                      person={people.find(p => p.name === person.motherName)}
+                      name={person.motherName}
+                    />
                   ) : (
                     '-'
                   )}
                 </td>
                 <td>
                   {person.fatherName ? (
-                    <PersonLink person={people.find(p => p.name === person.fatherName)} name={person.fatherName} />
+                    <PersonLink
+                      person={people.find(p => p.name === person.fatherName)}
+                      name={person.fatherName}
+                    />
                   ) : (
                     '-'
                   )}
